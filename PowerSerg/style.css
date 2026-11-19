@@ -1,0 +1,228 @@
+/* PowerSerg Website Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111318;
+    color: #262A32;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+/* Header */
+
+header {
+    background-color: #111318;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 4px solid #E63946;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #CCCCCC;
+    margin-bottom: 0;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #262A32;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #E63946;
+}
+
+/* Hero Section */
+
+#hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ), url("images/r9-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 110px 20px;
+    border-bottom: 4px solid #E63946;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #DDDDDD;
+}
+
+/* Main Content Layout */
+
+#content {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+main {
+    flex: 3;
+    min-width: 0;
+}
+
+main h2 {
+    color: #E63946;
+    border-bottom: 2px solid #E63946;
+    padding-bottom: 10px;
+}
+
+main p {
+    line-height: 1.7;
+}
+
+/* Featured Vehicles */
+
+.featured img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+.featured {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.featured article {
+    flex: 1;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border: 1px solid #DDDDDD;
+    border-top: 4px solid #E63946;
+}
+
+.featured h3 {
+    color: #111318;
+}
+
+.featured a {
+    color: #E63946;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.featured a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+
+aside {
+    flex: 1;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-left: 4px solid #E63946;
+    align-self: flex-start;
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 15px;
+}
+
+aside a {
+    color: #262A32;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #E63946;
+}
+
+/* Footer */
+
+footer {
+    background-color: #111318;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #FF6B6B;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 768px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    #hero {
+        padding: 60px 15px;
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    #content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
